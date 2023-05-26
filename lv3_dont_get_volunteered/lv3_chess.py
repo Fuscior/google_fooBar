@@ -11,6 +11,16 @@ possible knight moves
         x[-1] y[+2]
         x[-1] y[-2]
 '''
+knight_moves= [
+    [2,1],
+    [2,-1],
+    [-2,1],
+    [-2,-1],
+    [1,2],
+    [1,-2],
+    [-1,2],
+    [-1,-2]
+]
 #board[8][8] 8*8=64 squares
 chess_board= [
     [0,1,2,3,4,5,6,7],
@@ -31,9 +41,7 @@ valid move finsih
             locate y> 0 && y<8
 '''
 
-
 #work in prog
-
 start_locate=56
 
 x_locate= int(start_locate / 8)
@@ -41,3 +49,12 @@ y_locate= start_locate % 8
 
 print("The location is [", x_locate, "]", "[", y_locate, "]")
 print("The square number is: ",chess_board[x_locate][y_locate])
+
+##generate moves 8 possible
+for i in range(8):
+    x_move= x_locate + knight_moves[i][0]
+    y_move= y_locate + knight_moves[i][1]
+    if x_move >=0 and x_move <=7 and y_move >= 0 and y_move <=7:
+        #valid move
+        
+
