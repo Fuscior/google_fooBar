@@ -31,23 +31,43 @@ Your code should pass the following test cases.Note that it may also be run agai
 
 -- Python cases --
 Input:
-  solution.solution([[0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0]])
+  solution.solution([
+    [0, 0, 0, 0, 0, 0], 
+    [1, 1, 1, 1, 1, 0], 
+    [0, 0, 0, 0, 0, 0],
+    [0, 1, 1, 1, 1, 1], 
+    [0, 1, 1, 1, 1, 1],
+    [0, 0, 0, 0, 0, 0]])
 Output:   
   11
 
 Input:
-  solution.solution([[0, 1, 1, 0], [0, 0, 0, 1], [1, 1, 0, 0], [1, 1, 1, 0]])
+  solution.solution([
+    [0, 1, 1, 0],
+    [0, 0, 0, 1], 
+    [1, 1, 0, 0],
+    [1, 1, 1, 0]])
 Output:   
   7
 
 
 -- Java cases --
 Input:
-  Solution.solution({{0, 1, 1, 0}, {0, 0, 0, 1}, {1, 1, 0, 0}, {1, 1, 1, 0}})
+  Solution.solution({
+    {0, 1, 1, 0},
+    {0, 0, 0, 1},
+    {1, 1, 0, 0}, 
+    {1, 1, 1, 0}})
 Output:   
   7
 
 Input:
-  Solution.solution({{0, 0, 0, 0, 0, 0}, {1, 1, 1, 1, 1, 0}, {0, 0, 0, 0, 0, 0}, {0, 1, 1, 1, 1, 1}, {0, 1, 1, 1, 1, 1}, {0, 0, 0, 0, 0, 0}})
+  Solution.solution({
+    {0, 0, 0, 0, 0, 0},
+    {1, 1, 1, 1, 1, 0},
+    {0, 0, 0, 0, 0, 0},
+    {0, 1, 1, 1, 1, 1},
+    {0, 1, 1, 1, 1, 1}, 
+    {0, 0, 0, 0, 0, 0}})
 Output:  
   11
